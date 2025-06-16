@@ -4,12 +4,19 @@ h1 {
     font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 body {
-  background-image: url("https://static1.xdaimages.com/wordpress/wp-content/uploads/2025/05/wizard101-key-art-featuring-blue-wizard.jpg");
-  background-size:cover;
+  background-image: url("Images/27SecBattleFixed.gif");
+  background-size: cover;       /* Scales the GIF to cover the entire viewport */
+  background-repeat: no-repeat; /* Ensures the GIF doesn't tile */
+  background-position: center bottom; /* Centers the GIF in the viewport */
+  background-attachment: fixed; /* Keeps the GIF fixed even if content scrolls */
+  height: 100vh;                /* Makes the body take up the full viewport height */
+  margin: 0;                    /* Removes default browser margin on the body */
+  overflow: hidden; 
+  cursor: url("Images/w101wandCursor.cur"), auto;
 }
 audio {
     position: fixed; /* Takes it out of normal flow, relative to viewport */
-    bottom: 20px;    /* 20 pixels from the bottom of the screen */
+    bottom: 850px;    /* 20 pixels from the bottom of the screen */
     right: 20px;     /* 20 pixels from the right of the screen */
     z-index: 1000;   /* Ensures it stays on top of other content */
 }
